@@ -30,3 +30,7 @@
 ## Regras do Confronto
 * Caso um personagem vença o outro em um confronto, o perdedor perde um ponto.
 * Se ambos os personagens empatarem no confronto, nenhum ponto é perdido.
+
+## Tecnologias usadas 
+* JavaScript
+* Node
