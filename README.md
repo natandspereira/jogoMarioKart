@@ -1,36 +1,69 @@
-# jogoMarioKart 
+# 🏁 Jogo Mario Kart - Corrida de Personagens
 
-## Este é um jogo simples de corrida entre dois personagens, onde cada personagem tem atributos de velocidade, manobrabilidade e poder. Durante a corrida, os jogadores enfrentam diferentes tipos de desafios (reta, curva ou confronto) e utilizam suas habilidades para competir. O objetivo é acumular o maior número de pontos, com base no desempenho nas diferentes rodadas.
+Este é um jogo de corrida simples entre dois personagens, onde cada um possui atributos distintos de **velocidade**, **manobrabilidade** e **poder**. Durante a corrida, os jogadores enfrentam desafios variados e utilizam suas habilidades para competir. O objetivo é acumular o maior número de pontos ao longo de cinco rodadas.
 
-## Descrição do Jogo
-### O jogo é composto por duas fases principais:
+---
 
-### Corrida: Durante a corrida, os personagens enfrentam uma série de blocos de desafios (RETA, CURVA e CONFRONTO).
+## 🕹️ Descrição do Jogo
 
-* RETA: A habilidade de velocidade de cada personagem é usada para determinar quem é o vencedor.
-* CURVA: A habilidade de manobrabilidade de cada personagem é testada.
-* CONFRONTO: Um confronto direto onde o poder dos personagens é comparado. O vencedor do confronto faz o adversário perder pontos.
-* Declaração de Vencedor: Após cinco rodadas, o personagem com mais pontos é declarado o vencedor da corrida. Caso haja empate, a corrida termina sem um vencedor.
+O jogo é dividido em duas fases principais:
 
-## Atributos dos Personagens
-### Cada personagem tem os seguintes atributos:
+### 🏎️ Corrida
 
-* NOME: Nome do personagem.
-* VELOCIDADE: Determina o quão rápido o personagem é em retas.
-* MANOBRABILIDADE: Reflete a habilidade do personagem em curvas.
-* PODER: Determina a força do personagem em confrontos.
-* PONTOS: O número de pontos que o personagem acumulou ao longo da corrida.
+Durante a corrida, os personagens enfrentam uma sequência de desafios representados por blocos aleatórios:
 
-## Como Funciona
-* Durante cada rodada, dois jogadores (player1 e player2) rolam dados para determinar o resultado de cada desafio.
-* O bloco de cada rodada é escolhido aleatoriamente (RETA, CURVA ou CONFRONTO).
-* O personagem com o maior resultado (atributo + dado) ganha a rodada e marca um ponto.
-* Se ocorrer um confronto (bloco CONFRONTO), os personagens podem perder pontos dependendo de quem ganhar.
+- **RETA:** Testa a **velocidade** de cada personagem.
+- **CURVA:** Avalia a **manobrabilidade**.
+- **CONFRONTO:** Coloca os personagens em um embate direto com base no **poder**.
 
-## Regras do Confronto
-* Caso um personagem vença o outro em um confronto, o perdedor perde um ponto.
-* Se ambos os personagens empatarem no confronto, nenhum ponto é perdido.
+### 🏆 Declaração de Vencedor
 
-## Tecnologias usadas 
-* JavaScript
-* Node
+Após cinco rodadas:
+
+- O personagem com mais **pontos acumulados** é o vencedor.
+- Em caso de **empate**, a corrida termina sem vencedor.
+
+---
+
+## 👤 Atributos dos Personagens
+
+Cada personagem possui os seguintes atributos:
+
+- **NOME:** Identificação do personagem.
+- **VELOCIDADE:** Desempenho em blocos do tipo RETA.
+- **MANOBRABILIDADE:** Habilidade em curvas.
+- **PODER:** Força em confrontos diretos.
+- **PONTOS:** Total de pontos acumulados ao longo da corrida.
+
+---
+
+## 🔄 Como Funciona
+
+- Em cada rodada, os jogadores (`player1` e `player2`) **rolam dados**.
+- Um **bloco aleatório** é sorteado (RETA, CURVA ou CONFRONTO).
+- O resultado do desafio é definido pela **soma do atributo correspondente + valor do dado**.
+- O personagem com o maior resultado **vence a rodada** e ganha **1 ponto**.
+
+### ⚔️ Regras do Confronto (Bloco CONFRONTO)
+
+- O vencedor faz o oponente **perder 1 ponto**.
+- Em caso de empate, **ninguém perde pontos**.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- **JavaScript**
+- **Node.js**
+
+---
+
+## ▶️ Como Executar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/jogo-mario-kart.git
+
+2. Acesse o diretório e execute o jogo:
+cd jogo-mario-kart
+node index.js
